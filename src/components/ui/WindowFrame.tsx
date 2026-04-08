@@ -180,12 +180,13 @@ export const WindowFrame: React.FC<WindowFrameProps> = ({
       >
         <div className="overflow-hidden min-h-0">
           <div
-            className="p-3 sm:p-6 pb-4 sm:pb-8 overflow-y-auto break-words"
+            className="p-3 sm:p-6 pb-4 sm:pb-8 overflow-y-scroll break-words"
             style={{
-              maxHeight: win.height ? `${win.height - 80}px` : (win.isMaximized || isMobile ? '100vh' : '384px'),
+              maxHeight: win.height ? `${win.height - 80}px` : (win.isMaximized || isMobile ? 'calc(100vh - 120px)' : '384px'),
               overflowWrap: 'break-word',
               wordBreak: 'break-word',
               touchAction: 'pan-y',
+              WebkitOverflowScrolling: 'touch',
             }}
           >
             {children}
