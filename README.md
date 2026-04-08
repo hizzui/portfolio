@@ -19,6 +19,3 @@ Um portfólio web interativo com estilo neo-brutalista, janelas arrastáveis e s
 
 MIT © 2026
 
----
-
-Dev.ryan - Back-End Developer & CS Student 🚀
