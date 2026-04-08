@@ -33,6 +33,7 @@ export const WindowFrame: React.FC<WindowFrameProps> = ({
   const handleMouseDown = (e: React.MouseEvent) => {
     if ((e.target as HTMLElement).closest('button')) return;
     if (win.isMaximized) return;
+    if (isMobile) return; // Disable dragging on mobile
 
     isDraggingRef.current = true;
     onFocus(win.id);
@@ -180,9 +181,9 @@ export const WindowFrame: React.FC<WindowFrameProps> = ({
       >
         <div className="overflow-hidden min-h-0">
           <div
-            className="p-3 sm:p-6 pb-4 sm:pb-8 overflow-y-scroll break-words"
+            className="p-3 sm:p-6 pb-12 sm:pb-8 overflow-y-scroll break-words"
             style={{
-              maxHeight: win.height ? `${win.height - 80}px` : (win.isMaximized || isMobile ? 'calc(100vh - 120px)' : '384px'),
+              maxHeight: win.height ? `${win.height - 80}px` : (win.isMaximized || isMobile ? 'calc(100vh - 90px)' : '384px'),
               overflowWrap: 'break-word',
               wordBreak: 'break-word',
               touchAction: 'pan-y',
