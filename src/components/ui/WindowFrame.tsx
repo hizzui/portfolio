@@ -86,7 +86,7 @@ export const WindowFrame: React.FC<WindowFrameProps> = ({
         top: isMobile ? '80px' : '16px',
         left: '16px',
         right: '16px',
-        bottom: '16px',
+        bottom: isMobile ? '80px' : '16px',
         width: 'auto',
         height: 'auto',
         zIndex: win.zIndex + 100,
