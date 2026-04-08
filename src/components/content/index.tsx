@@ -38,7 +38,7 @@ export const AboutContent: React.FC<ContentProps> = ({ lang }) => {
   const text = content[lang];
 
   return (
-    <div className="space-y-4 p-4 flex flex-col items-center text-center">
+    <div className="space-y-4 p-4 pb-8 flex flex-col items-center text-center">
       {/* Avatar/Photo Section */}
       <div className="flex flex-col items-center mb-4">
         <div className="w-24 h-24 rounded-md border-2 border-black overflow-hidden bg-gray-200 mb-3 shadow-[2px_2px_0_rgba(0,0,0,0.3)]">
@@ -78,8 +78,8 @@ export const AboutContent: React.FC<ContentProps> = ({ lang }) => {
         </a>
       </div>
 
-      <div className="flex gap-2 w-full max-w-xs">
-        <a
+      <div className="flex gap-2 w-full max-w-xs mb-4">
+        <aa
           href="https://www.linkedin.com/in/rycarvalho"
           target="_blank"
           rel="noopener noreferrer"
