@@ -41,8 +41,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ lang }) => {
         }
         @media (max-width: 768px) {
           .hero-section {
-            justify-content: flex-start;
-            padding-top: 90px;
+            justify-content: center;
+            padding-top: 0;
             overflow: hidden;
           }
           .hero-line-2 {
