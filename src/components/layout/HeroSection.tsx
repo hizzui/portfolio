@@ -23,10 +23,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ lang }) => {
   const text = heroTexts[lang];
 
   return (
-    <section className="absolute inset-0 flex flex-col justify-start pt-20 sm:pt-32 md:pt-40 pl-4 sm:pl-8 md:pl-12 pointer-events-none z-10 overflow-hidden hero-section" style={{
-      top: '50%',
-      transform: 'translateY(-50%)',
-    }}>
+    <section className="absolute inset-0 flex flex-col justify-center pt-20 sm:pt-32 md:pt-40 pl-4 sm:pl-8 md:pl-12 pointer-events-none z-10 hero-section">
       <style>{`
         @keyframes fadeInUp {
           from {
@@ -39,11 +36,13 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ lang }) => {
           }
         }
         .hero-section {
-          transform: translateY(-50%);
+          /* Desktop: centered naturally with justify-center */
         }
         @media (max-width: 768px) {
           .hero-section {
-            transform: translateY(-52%);
+            justify-content: flex-start;
+            padding-top: 60px;
+            overflow: hidden;
           }
           .hero-line-2 {
             -webkit-text-stroke: 1.5px #000000;
