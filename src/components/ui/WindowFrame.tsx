@@ -84,10 +84,10 @@ export const WindowFrame: React.FC<WindowFrameProps> = ({
   const style: React.CSSProperties = isEffectiveMaximized || isMobile
     ? {
         position: 'fixed',
-        top: isMobile ? '80px' : '16px',
+        top: isMobile ? '70px' : '16px',
         left: '16px',
         right: '16px',
-        bottom: isMobile ? '80px' : '16px',
+        bottom: isMobile ? '60px' : '16px',
         width: 'auto',
         height: 'auto',
         zIndex: win.zIndex + 100,
@@ -183,7 +183,7 @@ export const WindowFrame: React.FC<WindowFrameProps> = ({
           <div
             className="p-3 sm:p-6 pb-12 sm:pb-8 overflow-y-scroll break-words"
             style={{
-              maxHeight: win.height ? `${win.height - 80}px` : (win.isMaximized || isMobile ? 'calc(100vh - 90px)' : '384px'),
+              maxHeight: win.height ? `${win.height - 80}px` : (win.isMaximized || isMobile ? 'calc(100vh - 70px)' : '384px'),
               overflowWrap: 'break-word',
               wordBreak: 'break-word',
               touchAction: 'pan-y',
