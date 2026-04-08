@@ -1,142 +1,64 @@
-# dev.natanD1 - Neo Brutalist Portfolio
+# dev.ryan - Neo Brutalist Portfolio
 
-Um portfólio web interativo e responsivo com estilo neo-brutalista, inspirado em design brutalista, com janelas arrastáveis e suporte bilíngue (PT-BR/EN).
+Um portfólio web interativo com estilo neo-brutalista, janelas arrastáveis e suporte bilíngue (PT-BR/EN).
 
 ## 🎨 Características
 
-- **Design Neo-Brutalista**: Estilo visual audacioso com tipografia grande, cores vibrantes (amarelo #FFEB3B e preto)
-- **Janelas Interativas Draggáveis**: Interface estilo desktop com janelas que podem ser arrastadas, minimizadas e maximizadas
-- **Suporte Bilíngue**: Alternância completa entre Português (PT-BR) e Inglês (EN)
-- **Carrossel Infinito de Skills**: Footer com animação contínua das tecnologias
-- **Componentes Reutilizáveis**: Arquitetura modular em React com TypeScript
-- **Totalmente Responsivo**: Funciona perfeitamente em mobile, tablet e desktop
-- **Animações Suaves**: GSAP-ready para animações avançadas
+- **Design Neo-Brutalista**: Tipografia grande, cores vibrantes e estilo audacioso
+- **Janelas Draggáveis**: Interface estilo desktop com janelas interativas
+- **Suporte Bilíngue**: PT-BR e ENG com alternância dinâmica
+- **Carrossel de Skills**: Footer com animação infinita de tecnologias
+- **Componentes em React + TypeScript**: Arquitetura modular e type-safe
+- **Totalmente Responsivo**: Mobile, tablet e desktop
 
-## 🛠️ Stack Tecnológico
+## 🛠️ Stack
 
-- **React 19+** - Framework UI
-- **TypeScript 5.8+** - Type safety
-- **Vite 6+** - Build tool ultrarrápido
-- **Tailwind CSS 3+** - Utility-first styling
-- **Lucide React** - Icon library
-- **GSAP 3.12+** - Animações avançadas
+- React 19 | TypeScript 5.8 | Vite 6 | Tailwind CSS 3 | Lucide React | GSAP 3.12
 
-## 📁 Estrutura do Projeto
+## 📁 Estrutura
 
 ```
 src/
-├── components/           # Componentes React reutilizáveis
-│   ├── layout/          # Layout components (Header, Footer, Hero)
-│   ├── ui/              # UI components (WindowFrame)
-│   └── content/         # Conteúdo das janelas (About, Work, Stack, Contact)
-├── screens/             # Telas/páginas (HomeScreen)
-├── hooks/               # Custom React hooks (useWindowManager, useLanguage)
-├── types/               # TypeScript types
-├── constants/           # Constantes (TRANSLATIONS)
-├── styles/              # Global styles
-├── App.tsx              # Componente raiz
-└── index.tsx            # Entry point
+├── components/ (layout, ui, content)
+├── screens/ (HomeScreen)
+├── hooks/ (useWindowManager, useLanguage)
+├── types/ e constants/
+└── styles/
 ```
 
 ## 🚀 Como Usar
 
-### Instalação
-
 ```bash
 npm install
+npm run dev      # Desenvolvimento (localhost:3000)
+npm run build    # Build para produção
+npm run preview  # Preview da build
 ```
 
-### Desenvolvimento
+## 🎯 Funcionalidades
 
-```bash
-npm run dev
-```
+- **Janelas Arrastáveis**: Clique e arraste pela barra de título
+- **Minimize/Maximize**: Botões de controle para cada janela
+- **Bilingual**: Troca dinâmica entre PT-BR e ENG
+- **Skills Carousel**: 16 tecnologias em loop infinito com cores alternadas
 
-Abre em [http://localhost:3000](http://localhost:3000)
+## 🎨 Design System
 
-### Build para Produção
+- **Background**: Laranja pastel com diagonal stripes (#FFB380 + #FFAA66)
+- **Headers de Janelas**: Laranja (#FF9500)
+- **Botões**: Estilo 3D com shadows
+- **Texto Hero**: Laranja igual ao fundo com stroke preto
 
-```bash
-npm run build
-```
+## 🔧 Customização
 
-### Preview da Build
-
-```bash
-npm run preview
-```
-
-## 🎯 Funcionalidades Principais
-
-### Janelas Arrastáveis
-
-- Clique e arraste as janelas pela barra de título
-- Minimize/maximize com os botões de controle
-- Z-index automático ao interagir
-- Posicionamento persistente durante a sessão
-
-### Bilingual Support
-
-- PT-BR e ENG com um clique
-- Todos os textos são traduzidos dinamicamente
-- Preferências mantidas durante a sessão
-
-### Carrossel de Skills
-
-- 16 tecnologias em loop infinito
-- Pausa ao fazer hover
-- Cores alternadas (5 cores diferentes)
-- Escala ao passar o mouse
-
-## 🌐 Estados das Janelas
-
-Cada janela (`about`, `work`, `stack`, `contact`) suporta:
-
-- **Aberta/Fechada** - Toggle via botões do menu
-- **Minimizada** - Desaparece da tela (botão amarelo)
-- **Maximizada** - Expande para tela cheia (botão verde)
-- **Arrastável** - Posição livre pela tela
-
-## 🎨 Paleta de Cores
-
-| Elemento | Cor | Hex |
-|----------|-----|-----|
-| Background | Amarelo Vibrante | #FFEB3B |
-| Texto Principal | Preto | #000000 |
-| Window About | Pink | #FF1493 |
-| Window Projects | Blue | #0066FF |
-| Window Stack | Purple | #9933FF |
-| Window Contact | Orange | #FF8800 |
-| Button Close | Red | #FF3333 |
-| Button Minimize | Yellow | #FFD700 |
-| Button Maximize | Green | #33CC33 |
-
-## 📱 Responsividade
-
-- **Desktop (≥768px)**: Layout completo com todas as janelas
-- **Mobile/Tablet (<768px)**: Janelas maximizadas adaptadas
-
-## 🔧 Configuração
-
-### Variáveis de Ambiente
-
-Crie um arquivo `.env` na raiz (opcional):
-
-```
-VITE_APP_TITLE=dev.natanD1
-```
-
-### Customização
-
-- **Cores**: Edite `tailwind.config.ts`
-- **Traduções**: Atualize `src/constants/index.ts`
-- **Conteúdo**: Modifique `src/components/content/`
-- **Animações**: Adicione GSAP em `src/components/ui/WindowFrame.tsx`
+- **Cores**: `tailwind.config.ts`
+- **Traduções**: `src/constants/index.ts`
+- **Conteúdo**: `src/components/content/`
 
 ## 📄 Licença
 
-MIT © 2026 Natan Dourado
+MIT © 2026
 
 ---
 
-Desenvolvido com ❤️ por [Natan Dourado](https://github.com/natanD1)
+Dev.ryan - Back-End Developer & CS Student 🚀
