@@ -114,7 +114,8 @@ export const WorkContent: React.FC<ContentProps> = ({ lang }) => {
       const filteredRepos = (data || [])
         .filter((repo: any) => 
           repo.name.toLowerCase() === 'newdiscordbot' || 
-          repo.name.toLowerCase() === 'dib'
+          repo.name.toLowerCase() === 'dib' ||
+          repo.name.toLowerCase() === 'neosearch'
         )
         .map((repo: any) => ({
           id: repo.id,
@@ -123,7 +124,12 @@ export const WorkContent: React.FC<ContentProps> = ({ lang }) => {
           html_url: repo.html_url,
           language: repo.language,
           stars: repo.stargazers_count || 0,
-        }));
+        }))
+        .sort((a: any, b: any) => {
+          if (a.name.toLowerCase() === 'neosearch') return -1;
+          if (b.name.toLowerCase() === 'neosearch') return 1;
+          return 0;
+        });
       setRepos(filteredRepos);
       setLoading(false);
     };
