@@ -23,7 +23,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ lang }) => {
   const text = heroTexts[lang];
 
   return (
-    <section className="absolute inset-0 flex flex-col justify-start pt-40 pl-12 pointer-events-none z-10">
+    <section className="absolute inset-0 flex flex-col justify-start pt-20 sm:pt-32 md:pt-40 pl-4 sm:pl-8 md:pl-12 pointer-events-none z-10 overflow-hidden">
       <style>{`
         @keyframes fadeInUp {
           from {
@@ -44,12 +44,17 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ lang }) => {
         .hero-line-3 {
           animation: fadeInUp 0.8s ease-out 0.2s both;
         }
+        @media (max-width: 768px) {
+          .hero-line-2 {
+            -webkit-text-stroke: 1.5px #000000;
+          }
+        }
       `}</style>
-      <h1 className="text-9xl font-black leading-none mb-4 tracking-tight hero-line-1">
+      <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-9xl font-black leading-none mb-2 sm:mb-4 tracking-tight hero-line-1 max-w-full break-words">
         {text.line1}
       </h1>
       <h2
-        className="text-9xl font-black leading-none tracking-tight italic hero-line-2"
+        className="text-4xl sm:text-5xl md:text-7xl lg:text-9xl font-black leading-none tracking-tight italic hero-line-2 max-w-full break-words"
         style={{
           color: '#FFB380',
           WebkitTextStroke: '3px #000000',
@@ -59,7 +64,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ lang }) => {
         {text.line2}
       </h2>
       <h3
-        className="text-9xl font-black leading-none tracking-tight hero-line-3"
+        className="text-4xl sm:text-5xl md:text-7xl lg:text-9xl font-black leading-none tracking-tight hero-line-3 max-w-full break-words"
       >
         {text.line3}
       </h3>

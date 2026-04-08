@@ -29,9 +29,9 @@ export const LoadingScreen: React.FC = () => {
         background: 'repeating-linear-gradient(-45deg, #FFB380 0px, #FFB380 15px, #FFAA66 15px, #FFAA66 16px)'
       }}
     >
-      <div className="text-center">
-        <div className="text-7xl font-black tracking-tighter mb-8 text-black">dev.ryan</div>
-        <div className="w-80 h-6 border-4 border-black mb-6 bg-white flex items-center overflow-hidden">
+      <div className="text-center px-4">
+        <div className="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tighter mb-6 sm:mb-8 text-black">dev.ryan</div>
+        <div className="w-56 sm:w-80 h-5 sm:h-6 border-4 border-black mb-4 sm:mb-6 bg-white flex items-center overflow-hidden">
           <div
             className="h-full bg-black"
             style={{
@@ -39,7 +39,7 @@ export const LoadingScreen: React.FC = () => {
             }}
           />
         </div>
-        <div className="text-sm font-mono tracking-widest text-black">
+        <div className="text-xs sm:text-sm font-mono tracking-widest text-black">
           INITIALIZING SYSTEM...
         </div>
       </div>

@@ -37,7 +37,7 @@ export const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="fixed bottom-0 left-0 right-0 bg-black border-t-4 border-black z-50 overflow-hidden">
+    <footer className="fixed bottom-0 left-0 right-0 bg-black border-t-4 border-black z-50 overflow-hidden h-12 sm:h-14">
       <style>{`
         @keyframes scroll-carousel {
           0% {
@@ -48,10 +48,10 @@ export const Footer: React.FC = () => {
           }
         }
       `}</style>
-      <div className="flex items-center h-14 overflow-hidden">
+      <div className="flex items-center h-full overflow-hidden">
         <div
           ref={innerRef}
-          className="flex gap-2 px-6 flex-shrink-0"
+          className="flex gap-1 sm:gap-2 px-3 sm:px-6 flex-shrink-0"
           style={{
             animation: 'scroll-carousel 45s linear infinite',
             width: 'calc(300%)',
@@ -63,7 +63,7 @@ export const Footer: React.FC = () => {
           {SKILLS.map((skill, idx) => (
             <span
               key={`${skill}-1-${idx}`}
-              className="px-3 py-2 border-2 text-xs font-semibold whitespace-nowrap flex-shrink-0 transition-all hover:text-black cursor-pointer rounded"
+              className="px-2 sm:px-3 py-1 sm:py-2 border-2 text-[10px] sm:text-xs font-semibold whitespace-nowrap flex-shrink-0 transition-all hover:text-black cursor-pointer rounded"
               style={{
                 borderColor: SKILL_COLORS[idx % SKILL_COLORS.length],
                 color: SKILL_COLORS[idx % SKILL_COLORS.length],
@@ -88,7 +88,7 @@ export const Footer: React.FC = () => {
           {SKILLS.map((skill, idx) => (
             <span
               key={`${skill}-2-${idx}`}
-              className="px-3 py-2 border-2 text-xs font-semibold whitespace-nowrap flex-shrink-0 transition-all hover:text-black cursor-pointer rounded"
+              className="px-2 sm:px-3 py-1 sm:py-2 border-2 text-[10px] sm:text-xs font-semibold whitespace-nowrap flex-shrink-0 transition-all hover:text-black cursor-pointer rounded"
               style={{
                 borderColor: SKILL_COLORS[idx % SKILL_COLORS.length],
                 color: SKILL_COLORS[idx % SKILL_COLORS.length],
@@ -113,7 +113,7 @@ export const Footer: React.FC = () => {
           {SKILLS.map((skill, idx) => (
             <span
               key={`${skill}-3-${idx}`}
-              className="px-3 py-2 border-2 text-xs font-semibold whitespace-nowrap flex-shrink-0 transition-all hover:text-black cursor-pointer rounded"
+              className="px-2 sm:px-3 py-1 sm:py-2 border-2 text-[10px] sm:text-xs font-semibold whitespace-nowrap flex-shrink-0 transition-all hover:text-black cursor-pointer rounded"
               style={{
                 borderColor: SKILL_COLORS[idx % SKILL_COLORS.length],
                 color: SKILL_COLORS[idx % SKILL_COLORS.length],
