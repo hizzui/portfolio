@@ -1,4 +1,0 @@
-Cliente (id_cliente, nome, endereco, telefone, email, forma_de_pagamento_preferida)
-Pedido (id_pedido, numero_do_pedido, data_do_pedido, status_do_pedido, valor_total, id_cliente)
-Produto (id_produto, nome_do_produto, descricao, preco, tipo_de_produto)
-Pedido_Produto (id_pedido, id_produto)

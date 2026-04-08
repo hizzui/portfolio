@@ -1,0 +1,14 @@
+{
+  "name": "dev.natanD1",
+  "description": "Neo Brutalist Portfolio - Interactive Desktop-style Portfolio",
+  "author": "Natan Dourado",
+  "version": "1.0.0",
+  "languages": ["pt-BR", "en"],
+  "technologies": [
+    "React",
+    "TypeScript",
+    "Vite",
+    "Tailwind CSS",
+    "Lucide Icons"
+  ]
+}
