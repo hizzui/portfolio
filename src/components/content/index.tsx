@@ -79,7 +79,7 @@ export const AboutContent: React.FC<ContentProps> = ({ lang }) => {
       </div>
 
       <div className="flex gap-2 w-full max-w-xs mb-4">
-        <aa
+        <a
           href="https://www.linkedin.com/in/rycarvalho"
           target="_blank"
           rel="noopener noreferrer"
