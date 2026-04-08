@@ -23,9 +23,9 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ lang }) => {
   const text = heroTexts[lang];
 
   return (
-    <section className="absolute inset-0 flex flex-col justify-start pt-20 sm:pt-32 md:pt-40 pl-4 sm:pl-8 md:pl-12 pointer-events-none z-10 overflow-hidden" style={{
+    <section className="absolute inset-0 flex flex-col justify-start pt-20 sm:pt-32 md:pt-40 pl-4 sm:pl-8 md:pl-12 pointer-events-none z-10 overflow-hidden hero-section" style={{
       top: '50%',
-      transform: 'translateY(-52%)',
+      transform: 'translateY(-50%)',
     }}>
       <style>{`
         @keyframes fadeInUp {
@@ -38,6 +38,17 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ lang }) => {
             transform: translateY(0);
           }
         }
+        .hero-section {
+          transform: translateY(-50%);
+        }
+        @media (max-width: 768px) {
+          .hero-section {
+            transform: translateY(-52%);
+          }
+          .hero-line-2 {
+            -webkit-text-stroke: 1.5px #000000;
+          }
+        }
         .hero-line-1 {
           animation: fadeInUp 0.8s ease-out;
         }
@@ -46,11 +57,6 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ lang }) => {
         }
         .hero-line-3 {
           animation: fadeInUp 0.8s ease-out 0.2s both;
-        }
-        @media (max-width: 768px) {
-          .hero-line-2 {
-            -webkit-text-stroke: 1.5px #000000;
-          }
         }
       `}</style>
       <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-9xl font-black leading-none mb-2 sm:mb-4 tracking-tight hero-line-1 max-w-full break-words">
