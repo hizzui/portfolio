@@ -80,7 +80,7 @@ export const AboutContent: React.FC<ContentProps> = ({ lang }) => {
 
       <div className="flex gap-2 w-full max-w-xs">
         <a
-          href="https://linkedin.com/in/natandourado"
+          href="https://www.linkedin.com/in/rycarvalho"
           target="_blank"
           rel="noopener noreferrer"
           className="flex-1 px-3 py-2 bg-blue-600 text-white text-xs font-bold rounded-md border-2 border-black shadow-[4px_4px_0_rgba(0,0,0,0.7)] hover:shadow-[2px_2px_0_rgba(0,0,0,0.5)] active:shadow-[0_0_0_rgba(0,0,0,0.1)] hover:translate-x-0.5 hover:translate-y-0.5 transition-all duration-150 text-center flex items-center justify-center gap-2"
@@ -220,14 +220,14 @@ export const ContactContent: React.FC<ContentProps> = ({ lang }) => {
     pt: {
       title: 'Entre em contato!',
       email: 'rinseene@gmail.com',
-      linkedin: '/in/natandourado',
+      linkedin: '/in/rycarvalho',
       github: '@hizzui',
       cta: 'Sempre aberto a conversas!',
     },
     en: {
       title: 'Get in touch!',
       email: 'rinseene@gmail.com',
-      linkedin: '/in/natandourado',
+      linkedin: '/in/rycarvalho',
       github: '@hizzui',
       cta: 'Always open to conversations!',
     },
@@ -241,7 +241,7 @@ export const ContactContent: React.FC<ContentProps> = ({ lang }) => {
       <p className="text-xs">{c.email}</p>
       <div className="flex gap-3 justify-center items-center">
         <a
-          href={`https://linkedin.com/in/natandourado`}
+          href={`https://www.linkedin.com/in/rycarvalho`}
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 px-3 py-2 bg-blue-600 text-white text-xs font-bold rounded-md border-2 border-black shadow-[2px_2px_0_rgba(0,0,0,0.5)] hover:shadow-[1px_1px_0_rgba(0,0,0,0.3)] hover:translate-x-0.5 hover:translate-y-0.5 transition-all duration-150"
