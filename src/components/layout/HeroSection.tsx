@@ -25,7 +25,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ lang }) => {
   return (
     <section className="absolute inset-0 flex flex-col justify-start pt-20 sm:pt-32 md:pt-40 pl-4 sm:pl-8 md:pl-12 pointer-events-none z-10 overflow-hidden" style={{
       top: '50%',
-      transform: 'translateY(-35%)',
+      transform: 'translateY(-50%)',
     }}>
       <style>{`
         @keyframes fadeInUp {
