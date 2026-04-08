@@ -37,7 +37,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ lang }) => {
         }
         .hero-section {
           /* Desktop: centered naturally with justify-center */
-          transform: translateY(-8%);
+          transform: translateY(-12%);
         }
         @media (max-width: 768px) {
           .hero-section {
