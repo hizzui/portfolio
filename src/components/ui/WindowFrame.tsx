@@ -181,7 +181,9 @@ export const WindowFrame: React.FC<WindowFrameProps> = ({
       >
         <div className="overflow-hidden min-h-0">
           <div
-            className="p-3 sm:p-6 pb-12 sm:pb-8 overflow-y-scroll break-words"
+            className={`p-3 sm:p-6 pb-12 sm:pb-8 break-words ${
+              win.type === 'stack' || win.type === 'contact' ? 'overflow-hidden' : 'overflow-y-scroll'
+            }`}
             style={{
               maxHeight: win.height ? `${win.height - 80}px` : (win.isMaximized || isMobile ? 'calc(100vh - 70px)' : '384px'),
               overflowWrap: 'break-word',

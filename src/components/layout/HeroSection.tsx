@@ -11,12 +11,12 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ lang }) => {
     pt: {
       line1: 'DEV PYTHON.',
       line2: 'UM (DESENVOLVEDOR)',
-      line3: 'BACKEND.',
+      line3: 'FULLSTACK.',
     },
     en: {
       line1: 'DEV PYTHON.',
       line2: 'A (DEVELOPER)',
-      line3: 'BACKEND.',
+      line3: 'FULLSTACK.',
     },
   };
 

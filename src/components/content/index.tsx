@@ -21,17 +21,17 @@ export const AboutContent: React.FC<ContentProps> = ({ lang }) => {
   const content = {
     pt: {
       name: 'Ryan Carlos',
-      title: 'Desenvolvedor Back-End & Estudante de CC',
-      tagline: 'Focado em desenvolvimento Back-End com Python',
-      expertise: 'Sou estudante de Ciência da Computação focado em desenvolvimento Back-End com Python. Tenho interesse em construção de APIs, modelagem de banco de dados e desenvolvimento de sistemas escaláveis.',
-      mission: 'Atualmente estudando e desenvolvendo projetos com Django, FastAPI e PostgreSQL.',
+      title: 'Desenvolvedor Fullstack',
+      tagline: 'Especializado em desenvolvimento Fullstack com Python',
+      expertise: 'Desenvolvedor Fullstack apaixonado por criar soluções escaláveis e robustas. Especializado em construção de APIs, modelagem de banco de dados e desenvolvimento de sistemas de alta performance.',
+      mission: 'Desenvolvendo soluções profissionais com Django, FastAPI e PostgreSQL.'
     },
     en: {
       name: 'Ryan Carlos',
-      title: 'Back-End Developer & CS Student',
-      tagline: 'Focused on Back-End development with Python',
-      expertise: 'I am a Computer Science student focused on Back-End development with Python. I have interest in API construction, database modeling and development of scalable systems.',
-      mission: 'Currently studying and developing projects with Django, FastAPI and PostgreSQL.',
+      title: 'Fullstack Developer',
+      tagline: 'Specialized in Fullstack development with Python',
+      expertise: 'Passionate Fullstack Developer creating scalable and robust solutions. Specialized in API construction, database modeling, and high-performance system development.',
+      mission: 'Developing professional solutions with Django, FastAPI and PostgreSQL.'
     },
   };
 
